@@ -1,0 +1,16 @@
+.container {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  top: 30%;
+  left: 10px;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 5rem;
+}
+
+.container a {
+  font-size: 1.4rem;
+}
