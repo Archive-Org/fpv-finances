@@ -3,9 +3,7 @@
 body {
   margin: 0px;
   position: relative;
-  color: white;
   height: 100vh;
-  background-color: #232c39;
 
   font-family: Arial, Helvetica, Helvetica Neue, serif;
   overflow-y: hidden;
@@ -16,7 +14,7 @@ h2 {
   font-size: 2.25rem;
   font-weight: bold;
   letter-spacing: -0.025em;
-  color: #fff;
+  color: #483D3F;
 }
 
 p {
