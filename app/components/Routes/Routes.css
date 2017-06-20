@@ -1,0 +1,14 @@
+.div {
+    border-radius: 0px;
+    width: 50%;
+    padding: 0px;
+    margin: 0px auto;
+    float: none;
+    font-size: 20px;
+}
+.cell {
+  padding: 20px;
+}
+.jsonCell {
+  padding: 20px;
+}

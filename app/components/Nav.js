@@ -6,6 +6,7 @@ const Nav = () => (
   <Tabs>
     <Tab label="Home" value="/" linkButton containerElement={<Link to="/" />} />
     <Tab label="add" value="/add" linkButton containerElement={<Link to="/add" />} />
+    <Tab label="Routes" value="/routes" linkButton containerElement={<Link to="/routes" />} />
     <Tab label="Display" value="/display" linkButton containerElement={<Link to="/display" />} />
 
   </Tabs>

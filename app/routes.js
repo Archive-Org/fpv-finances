@@ -5,14 +5,14 @@ import App from './containers/App';
 import HomePage from './containers/HomePage';
 import AddPage from './containers/AddPage';
 import DisplayPage from './containers/DisplayPage';
-import CounterPage from './containers/CounterPage';
+import RoutesPage from './containers/RoutesPage';
 
 export default () => (
   <App>
     <Switch>
       <Route path="/add" component={AddPage} />
-      <Route path="/counter" component={CounterPage} />
       <Route path="/display" component={DisplayPage} />
+      <Route path="/routes" component={RoutesPage} />
       <Route path="/" component={HomePage} />
     </Switch>
   </App>
