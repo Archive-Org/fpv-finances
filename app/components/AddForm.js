@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
-import Route from './AddForm/Route';
+import Route from './AddForm/AddRoute';
+import { Form, FormGroup, ControlLabel, FormControl} from 'react-bootstrap';
+
+
+const divStyle = {
+  paddingTop: '24px',
+};
 
 export default class AddForm extends Component {
   constructor() {
     super();
     this.state = {
       items: [
-        'Ruta', 'Vehiculo', 'Empleado', 'Prestamo', 'Recivo',
+        '-', 'Ruta', 'Vehiculo', 'Empleado', 'Prestamo', 'Recivo',
         'Transferencia', 'Gasoil', 'Cliente'
       ],
       selected: 0
@@ -26,27 +32,31 @@ export default class AddForm extends Component {
   getForm() {
     switch (this.state.selected) {
       case 'Ruta':
-        return (
-          <Route />
-        );
+      return (
+        <Route />
+      );
       default:
-        return (<div />);
+      return (<div />);
     }
   }
 
 
   render() {
     const listItems = this.state.items.map((i) =>
-      <option value={i.toString()}>{i}</option>
-    );
-    return (
-      <form onSubmit={this.handleSubmit}>
+    <option value={i.toString()}>{i}</option>
+  );
+  return (
+    <Form style={divStyle} inline>
+
+      <FormGroup controlId="formInlineName">
+        <ControlLabel>Tipo</ControlLabel>
+        {' '}
         <select onChange={this.handleChange} className="form-control">
           {listItems}
         </select>
-        {this.getForm()}
-        <input type="submit" value="Submit" />
-      </form>
-    );
+      </FormGroup>
+      {this.getForm()}
+    </Form>
+  );
   }
 }

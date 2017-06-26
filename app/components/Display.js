@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 
 export default class Add extends Component {
   render() {
-    console.log('You are in add');
+    console.log('You are in display');
     return (
       <div>
         <div data-tid="container">

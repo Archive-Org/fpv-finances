@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => (
   <Tabs>
-    <Tab label="Home" value="/" linkButton containerElement={<Link to="/" />} />
-    <Tab label="add" value="/add" linkButton containerElement={<Link to="/add" />} />
-    <Tab label="Routes" value="/routes" linkButton containerElement={<Link to="/routes" />} />
-    <Tab label="Display" value="/display" linkButton containerElement={<Link to="/display" />} />
+    <Tab label="Inicio" value="/" containerElement={<Link to="/" />} />
+    <Tab label="Añadir" value="/add" containerElement={<Link to="/add" />} />
+    <Tab label="Rutas" value="/routes" containerElement={<Link to="/routes" />} />
+    <Tab label="Mostrar" value="/display" containerElement={<Link to="/display" />} />
 
   </Tabs>
 );

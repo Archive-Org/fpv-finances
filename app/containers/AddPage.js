@@ -1,14 +1,14 @@
 // @flow
 import React, { Component } from 'react';
-import Add from '../components/Add';
-import Nav from '../components/Nav';
+import AddForm from '../components/AddForm';
 
 export default class HomePage extends Component {
   render() {
     return (
       <div>
-        <Nav />
-        <Add />
+        <h2>Añadir</h2>
+        <br />
+        <AddForm />
       </div>
     );
   }
